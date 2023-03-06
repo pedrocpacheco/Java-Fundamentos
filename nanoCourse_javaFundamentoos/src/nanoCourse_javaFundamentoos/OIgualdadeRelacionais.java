@@ -13,6 +13,7 @@ public class OIgualdadeRelacionais {
 		boolean menorIgual = idade <= 18;	// Vendo se a idade é menor ou igual à 18
 				
 		System.out.println(maioridade);
+		System.out.println(menoridade);
 		System.out.println(igualidade);
 		System.out.println(diferenca);
 		System.out.println(maiorIgual);

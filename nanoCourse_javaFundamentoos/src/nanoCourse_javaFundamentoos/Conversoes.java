@@ -24,6 +24,7 @@ public class Conversoes {
 		
 		System.out.println(valorInt); 		// Resultado será 9 e nao 9.99, pois INT não armazena tudo do DOUBLE
 		System.out.println("Pedro");
+		System.out.println("Carvalho");
 	}
 
 }

@@ -4,8 +4,8 @@ public class declararString {
 	
 	public static void main(String[] args) {
 		
-		// Existem formas diferentes de criar Strings, a grande diferença é se você
-		// Instancia a variavel do tipo String a um objeto String ou não.
+// Existem formas diferentes de criar Strings, a grande diferença é se você
+// Instancia a variavel do tipo String a um objeto String ou não.
 		
 // Declaração -> Instanciação -> Inicialização (linhas diferentes)
 		

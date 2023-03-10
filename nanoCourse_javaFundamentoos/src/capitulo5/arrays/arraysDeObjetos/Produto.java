@@ -25,7 +25,8 @@ public class Produto {
 		this.valor = valor;
 	}
 	
-	@Override
+	// Estamos transformando o metodo toString
+	@Override // Queremos fazer ele imprimir uma coleção de informações dos nossos Arrays
 	public String toString() {
 		return "Produto [nome=" + nome + ", descrição= " + descricao + ", valor= " + valor + "]";
 	}

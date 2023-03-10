@@ -23,8 +23,15 @@ public class Caixa {
 		produtos[0] = prod1; // prod1 no indice 0
 		produtos[1] = prod2; // prod2 no indice 1
 		
+		// Imprimindo todas as informações dos objetos do Array
+		
+		//Utilizando for loop
+		for(int i = 0; i < produtos.length; i++) { // Usamos produtos.length para passar por todos os itens
+			System.out.println(produtos[i].toString()); // Utilizamos o metodo toString para passar um objeto para String
+		} // Não precisamos utilizar o for loop pela produtos.length, e sim usar o forEach das arrays
+		
 		// Utilizando metodo foreach
-		for(Produto prod: produtos) {
+		for(Produto prod: produtos) { // Criamos uma variavel que armazena cada item
 			System.out.println(prod.toString());
 		}
 		

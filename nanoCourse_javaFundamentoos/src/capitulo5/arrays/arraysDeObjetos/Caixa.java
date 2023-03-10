@@ -34,7 +34,7 @@ public class Caixa {
 		for(Produto prod: produtos) { // Criamos uma variavel que armazena cada item
 			System.out.println(prod.toString());
 		}
-		
+	
 		// O Array poderia ser criado depois dos atributos
 	// Produto[] produtos = new Produto[] {prod1, prod2};
 		// Assim, já poderiamso preencher as posições do Array com prod1 e prod2

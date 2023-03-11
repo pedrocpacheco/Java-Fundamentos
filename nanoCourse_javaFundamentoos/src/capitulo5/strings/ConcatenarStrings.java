@@ -18,7 +18,7 @@ public class ConcatenarStrings {
 		System.out.println(nomeCompleto);
 		
 		// Utilizando o +=
-		nomeCompleto = nome += sobrenome;
+		nomeCompleto += nome + " " + sobrenome;
 		System.out.println(nomeCompleto);
 		
 	}

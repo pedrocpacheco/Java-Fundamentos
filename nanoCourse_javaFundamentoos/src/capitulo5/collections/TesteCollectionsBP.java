@@ -28,6 +28,10 @@ public class TesteCollectionsBP {
 // .size: retorna o tamanho da ArrayList
 	System.out.println(carrinho.size());
 	
+// .contains: retorna se contem elemento no array
+	System.out.println(carrinho.contains("Carvalho"));
+		// False
+	
 	}
 }
 

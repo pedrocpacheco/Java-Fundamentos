@@ -27,7 +27,6 @@ public class TesteArquivo {
 			
 		
 		} catch(IOException e) {
-			
 			e.printStackTrace();
 			
 		}
@@ -36,6 +35,12 @@ public class TesteArquivo {
 		
 	}
 
+	public static void lerArquivo(String caminho) {
+		
+		
+		
+	}
+	
 	public static void main(String[] args) {
 		
 		String nomeArquivo = "estoque.csv";

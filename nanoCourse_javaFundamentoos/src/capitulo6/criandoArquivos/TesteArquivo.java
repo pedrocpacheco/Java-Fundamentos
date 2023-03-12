@@ -32,6 +32,8 @@ public class TesteArquivo {
 			
 		}
 		
+		System.out.println("Seu arquivo " + nomeArquivo + "foi gerado em " + caminho);
+		
 	}
 
 	public static void main(String[] args) {

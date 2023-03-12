@@ -1,6 +1,7 @@
 package capitulo6.criandoArquivos;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,6 +10,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TesteArquivo {
+	
+	public static void informacoesArquivo(String caminho) {
+		
+		// Criando arquivo
+		File arquivo = new File(caminho);
+		
+		if(arquivo.exists()) {
+			System.out.println("O arquivo existe!" + 
+					"\nPode ser lido: " + arquivo.canRead() + 
+					"\nPode ser gravado:" + arquivo.canWrite() +
+					"\nTamanho: " + arquivo.length() +
+					"\nCaminho: " + arquivo.getPath()); 
+		} else {
+			try {
+				if(arquivo.createNewFile()) {
+					System.out.println("Arquivo Criado!");
+				} else {
+					System.out.println("Arquivo não criado!");
+				}
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
 	
 	public static void gravarEstoque(String nomeArquivo, String caminho, List<String> conteudo) {
 		
@@ -74,7 +100,7 @@ public class TesteArquivo {
 	public static void main(String[] args) {
 		
 		// Criando caminho para o arquivo
-		String nomeArquivo = "estoque.csv";
+		String nomeArquivo = "estoque2.csv";
 		String diretorio = System.getProperty("user.home");
 		String caminho = diretorio + "\\" + nomeArquivo; 
 		
@@ -87,9 +113,9 @@ public class TesteArquivo {
 		conteudo.add("Breaking Bad; Bryan Crasnton; 5; 9.2" );
 		
 		// Criando função que recebe 3 atributos
-		// gravarEstoque(nomeArquivo, caminho, conteudo);
-		
-		lerArquivo(caminho);
+		gravarEstoque(nomeArquivo, caminho, conteudo);
+		// lerArquivo(caminho);
+		informacoesArquivo(caminho);
 		
 	}
 	
